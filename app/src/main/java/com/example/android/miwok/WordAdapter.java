@@ -23,7 +23,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
         LayoutInflater miwokInflater = LayoutInflater.from(getContext());
         View wordView = convertView;
@@ -62,7 +62,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         //Set the theme color for the list item
         View textContainer = wordView.findViewById(R.id.text_container);
         //Find the color that resource Id maps to
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        final int color = ContextCompat.getColor(getContext(), mColorResourceId);
         //Set the background color of the text container
         textContainer.setBackgroundColor(color);
 
