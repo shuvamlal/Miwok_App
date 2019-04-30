@@ -50,6 +50,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Find the ImageView in the word_list.xmll layout with the ID image.
         ImageView imageView = wordView.findViewById(R.id.image);
 
+        // Find the ImageView in the word_list.xmll layout with the ID image.
+        View playImageView = wordView.findViewById(R.id.play_key);
+
         if (currentWord.hasImage()) {
             // if an image is available, display the provided image based on resourceId
             imageView.setImageResource(currentWord.getmImageResourceId());
@@ -65,6 +68,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         final int color = ContextCompat.getColor(getContext(), mColorResourceId);
         //Set the background color of the text container
         textContainer.setBackgroundColor(color);
+        playImageView.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

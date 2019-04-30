@@ -25,31 +25,50 @@
         android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
-        android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:minHeight="88dp"
-        android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/default_text_view"
+        <LinearLayout
+            android:id="@+id/text_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="one" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:minHeight="88dp"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
 
-        <TextView
-            android:id="@+id/miwok_text_view"
+            <TextView
+                android:id="@+id/default_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="one" />
+
+            <TextView
+                android:id="@+id/miwok_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="lutti" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/play_key"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:text="lutti" />
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:paddingTop="24dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp"
+            android:src="@drawable/ic_play_arrow" />
 
     </LinearLayout>
+
+
 </LinearLayout>
