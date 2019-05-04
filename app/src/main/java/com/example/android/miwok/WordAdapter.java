@@ -28,7 +28,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         LayoutInflater miwokInflater = LayoutInflater.from(getContext());
         View wordView = convertView;
         if (wordView == null) {
-            wordView = miwokInflater.from(getContext()).inflate(
+            wordView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
